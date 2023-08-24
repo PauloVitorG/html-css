@@ -1,6 +1,5 @@
 # html-css
- CursoemVideo
 
- Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
+Testando a edição de repositório Online
 
- <a href="https://paulovitorg.github.io/html-css/exercicios/EX001/index.html">Acessar ex001 </a>
+Link: <a href="#"> Um link aqui </a>
