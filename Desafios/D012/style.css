@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    font-family: 'Work Sans';
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: clamp(2.5em, 6.5vw, 6em);
+    margin: 5px;
+}
+
+header p {
+    font-size: 25px;
+    margin: 5px;
+    
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: white;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+main p {
+
+    font-size: clamp(1.35em, 2.7vw, 2.7vw);
+    margin: 15px 40px;
+    font-family: 'Work Sans';
+}
+
+.paral {
+    background-color: rgb(141, 141, 141);
+    height:70vw;
+    min-height: 650px;
+    padding: 80px 20px;
+    margin: 60px 0px;
+    box-shadow: inset 0px 0px 30px rgb(0, 0, 0);
+
+}
+
+#p1 {
+    background: black url(img/morte.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+#p2 {
+    background: black url(img/espiral.png) center center no-repeat fixed;
+    background-size: cover;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    padding: 20px;
+    width: 51vw;
+    min-width: 415px;
+    height: 70vw;
+    min-height: 650px;
+    border-radius: 25px;
+
+    
+}
+
+footer {
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 60px;
+}
+
+.text {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
