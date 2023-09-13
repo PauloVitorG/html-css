@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 97vw;
+        border-collapse: collapse;
+        text-align: center;
+        position: relative;
+    }
+
+    table img {
+        position: relative;
+        top: 1px;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+        color: rgb(53, 53, 53);
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+        
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: lightgray;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: gray;
+    }
+
+
+    thead, tfoot {
+        background-color: rgb(53, 53, 53);
+        color: white;
+    }
+
+    thead {
+        position: sticky;
+        top: -1px;
+        z-index: 1;
+    }
+
+    .num, .tnum {
+        text-align: right;
+    }
+
+    .nome {
+        text-align: left;
+    }
+
+    p {
+        margin: 10px 25vw;
+    }
+
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da pop. total</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <caption>População das Unidades Federativas </caption>
+            <tr>
+                <td>1</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""> São Paulo</td>
+                <td class="num">44.420.459</td>
+                <td>21,88%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png">Minas Gerais</td>
+                <td class="num">20.538.718</td>
+                <td>10,11%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png">Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+                <td>7,91%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png">Bahia</td>
+                <td class="num">14.136.417</td>
+                <td>6,96%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png">Paraná</td>
+                <td class="num">11.443.208</td>
+                <td>5,64%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png">Rio Grande do Sul</td>
+                <td class="num">10.880.506</td>
+                <td>5,36%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png">Pernambuco</td>
+                <td class="num">9.058.155</td>
+                <td>4,46%</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png">Ceará</td>
+                <td class="num">8.791.688</td>
+                <td>4,33%</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Pará.svg/20px-Bandeira_do_Pará.svg.png">Pará</td>
+                <td class="num">8.116.132</td>
+                <td>4,10%</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png">Santa Catarina</td>
+                <td class="num">7.609.601</td>
+                <td>3,75%</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png">Goiás</td>
+                <td class="num">7.055.228</td>
+                <td>3,47%</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png">Maranhão</td>
+                <td class="num">6.775.152</td>
+                <td>3,34%</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png">Paraíba</td>
+                <td class="num">3.974.495</td>
+                <td>1,96%</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png">Amazonas</td>
+                <td class="num">3.941.175</td>
+                <td>1,94%</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png">Espírito Santo</td>
+                <td class="num">3.833.486</td>
+                <td>1,89%</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png">Mato Grosso</td>
+                <td class="num">3.658.813</td>
+                <td>1,8%</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png">Rio Grande do Norte</td>
+                <td class="num">3.302.406</td>
+                <td>1,63%</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png">Piauí</td>
+                <td class="num">3.269.200</td>
+                <td>1,61%</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png">Alagoas</td>
+                <td class="num">3.127.511</td>
+                <td>1,54%</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png">Distrito Federal</td>
+                <td class="num">2.817.068</td>
+                <td>1,39%</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png">Mato Grosso do Sul</td>
+                <td class="num">2.756.700</td>
+                <td>1,36%</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png">Sergipe</td>
+                <td class="num">2.209.558</td>
+                <td>1,09%</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png">Rondônia</td>
+                <td class="num">1.581.016</td>
+                <td>0,78%</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png">Tocantins</td>
+                <td class="num">1.511.459</td>
+                <td>0,74%</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png">Acre</td>
+                <td class="num">830.026</td>
+                <td>0,41%</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png">Amapá</td>
+                <td class="num">733.508</td>
+                <td>0,36%</td>
+            </tr>
+            <tr>
+                <td>27</td>	
+                <td class = "nome"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png">Roraima</td>
+                <td class="num">636.303</td>
+                <td>0,31%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total</th>
+            <td class = "nome"><strong>27</strong></td>
+            <td class="tnum"><strong>203.062.512</strong></td>
+            <td class><strong>100%</strong></td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis facilis culpa, ducimus illo iste, odit ad exercitationem odio cumque laborum pariatur quia ipsa maxime. Laudantium, obcaecati. Natus, iste maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur deserunt saepe perferendis sit eligendi illo reprehenderit laborum aspernatur quasi beatae molestiae sunt neque enim, ipsa quas. Voluptatibus ea aliquam neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim suscipit itaque modi inventore, eaque doloremque architecto in mollitia harum iure, distinctio eius nam nemo nulla commodi quos! Eveniet, repudiandae voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam vitae omnis, incidunt sunt laborum amet libero voluptate porro tempore iusto commodi ex, accusantium expedita debitis? Non enim rem reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia labore totam reiciendis provident perferendis ex maxime, alias sequi fuga sapiente suscipit consequuntur. Repudiandae dolorum perspiciatis quis, excepturi nostrum nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim iste harum temporibus accusamus! Provident reiciendis distinctio expedita nisi aperiam, delectus, non quaerat libero sequi asperiores rem ullam soluta aspernatur repellat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis facilis culpa, ducimus illo iste, odit ad exercitationem odio cumque laborum pariatur quia ipsa maxime. Laudantium, obcaecati. Natus, iste maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur deserunt saepe perferendis sit eligendi illo reprehenderit laborum aspernatur quasi beatae molestiae sunt neque enim, ipsa quas. Voluptatibus ea aliquam neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim suscipit itaque modi inventore, eaque doloremque architecto in mollitia harum iure, distinctio eius nam nemo nulla commodi quos! Eveniet, repudiandae voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam vitae omnis, incidunt sunt laborum amet libero voluptate porro tempore iusto commodi ex, accusantium expedita debitis? Non enim rem reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia labore totam reiciendis provident perferendis ex maxime, alias sequi fuga sapiente suscipit consequuntur. Repudiandae dolorum perspiciatis quis, excepturi nostrum nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim iste harum temporibus accusamus! Provident reiciendis distinctio expedita nisi aperiam, delectus, non quaerat libero sequi asperiores rem ullam soluta aspernatur repellat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis facilis culpa, ducimus illo iste, odit ad exercitationem odio cumque laborum pariatur quia ipsa maxime. Laudantium, obcaecati. Natus, iste maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur deserunt saepe perferendis sit eligendi illo reprehenderit laborum aspernatur quasi beatae molestiae sunt neque enim, ipsa quas. Voluptatibus ea aliquam neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim suscipit itaque modi inventore, eaque doloremque architecto in mollitia harum iure, distinctio eius nam nemo nulla commodi quos! Eveniet, repudiandae voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam vitae omnis, incidunt sunt laborum amet libero voluptate porro tempore iusto commodi ex, accusantium expedita debitis? Non enim rem reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia labore totam reiciendis provident perferendis ex maxime, alias sequi fuga sapiente suscipit consequuntur. Repudiandae dolorum perspiciatis quis, excepturi nostrum nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim iste harum temporibus accusamus! Provident reiciendis distinctio expedita nisi aperiam, delectus, non quaerat libero sequi asperiores rem ullam soluta aspernatur repellat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis facilis culpa, ducimus illo iste, odit ad exercitationem odio cumque laborum pariatur quia ipsa maxime. Laudantium, obcaecati. Natus, iste maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur deserunt saepe perferendis sit eligendi illo reprehenderit laborum aspernatur quasi beatae molestiae sunt neque enim, ipsa quas. Voluptatibus ea aliquam neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim suscipit itaque modi inventore, eaque doloremque architecto in mollitia harum iure, distinctio eius nam nemo nulla commodi quos! Eveniet, repudiandae voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam vitae omnis, incidunt sunt laborum amet libero voluptate porro tempore iusto commodi ex, accusantium expedita debitis? Non enim rem reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia labore totam reiciendis provident perferendis ex maxime, alias sequi fuga sapiente suscipit consequuntur. Repudiandae dolorum perspiciatis quis, excepturi nostrum nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim iste harum temporibus accusamus! Provident reiciendis distinctio expedita nisi aperiam, delectus, non quaerat libero sequi asperiores rem ullam soluta aspernatur repellat.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium officiis facilis culpa, ducimus illo iste, odit ad exercitationem odio cumque laborum pariatur quia ipsa maxime. Laudantium, obcaecati. Natus, iste maiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur deserunt saepe perferendis sit eligendi illo reprehenderit laborum aspernatur quasi beatae molestiae sunt neque enim, ipsa quas. Voluptatibus ea aliquam neque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim suscipit itaque modi inventore, eaque doloremque architecto in mollitia harum iure, distinctio eius nam nemo nulla commodi quos! Eveniet, repudiandae voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam vitae omnis, incidunt sunt laborum amet libero voluptate porro tempore iusto commodi ex, accusantium expedita debitis? Non enim rem reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia labore totam reiciendis provident perferendis ex maxime, alias sequi fuga sapiente suscipit consequuntur. Repudiandae dolorum perspiciatis quis, excepturi nostrum nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim iste harum temporibus accusamus! Provident reiciendis distinctio expedita nisi aperiam, delectus, non quaerat libero sequi asperiores rem ullam soluta aspernatur repellat.</p>
+</body>
+</html>
