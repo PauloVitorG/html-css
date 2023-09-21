@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor">
+        </p>
+
+        <p>
+            <label for="niv">Nível de Satisfação</label>
+            <input type="range" name="niv" id="niv" onpointermove="nivel()" value="4" min="2" max="9"> <div id="ntxt" style="display: inlineW;"> </div>
+        </p>
+
+        <p>
+            <label for="foto">Foto de perfil:</label>
+            <input type="file" name="foto" id="foto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" >
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    <script>
+        let niv = window.document.querySelector("input#niv")
+        let ntxt = document.querySelector("div#ntxt")
+        ntxt.innerHTML = niv.value
+        function nivel() {
+            ntxt.innerHTML = niv.value
+        }
+    </script>
+</body>
+</html>
