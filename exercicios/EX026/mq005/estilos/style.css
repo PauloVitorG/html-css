@@ -60,6 +60,7 @@ header > h1 {
 }
 
 .itens {
+    background-color: var(--orange1);
     display: none;
     transition: 0.5s;
 }
@@ -105,7 +106,7 @@ article h1, h2, h3 {
 
 article h2 {
     font-size: 2em;
-    width: 400px;
+    width: 60vw;
     border-bottom: 1px solid var(--orange2);
 }
 
@@ -138,4 +139,15 @@ img {
     margin-bottom: 20px;
     color: var(--cinzatxt);
     background-color: #E48462;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cinzatxt);
+    font-weight: bold;
+}
+
+main, main > h2, img, .desc {
+    max-width: 600px;
+
 }
