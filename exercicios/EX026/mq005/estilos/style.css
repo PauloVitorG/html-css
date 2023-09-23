@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -12,14 +16,16 @@
     --blue3: #28D3E0;
     --orange1: #AD2D1B;
     --orange2: #E48462;
-    --cinzatxt: rgb(43, 43, 43);
+    --cinzatxt: rgba(0, 0, 0, 0.671);
 }
 
 
-html {
+body {
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
+
 
 header {
     text-align: center;
@@ -28,9 +34,10 @@ header {
 }
 
 span#burguer {
+    user-select:none;
     background-color: var(--blue1);
     display: block;
-    padding: 10px;
+    padding: 10px 0px;
     color: white;
     font-size: 1.5em;
     transition: 0.2s;
@@ -44,11 +51,22 @@ span#burguer:hover {
 }
 
 header > h1 {
-    padding: 15px;
+    
+    font-family: 'Black Ops One', cursive;
+    padding: 15px 0px;
+    font-weight: 100;
+    font-variant: small-caps;
+    font-size: 3em;
 }
 
-#itens {
+.itens {
     display: none;
+    transition: 0.5s;
+}
+
+.show-itens {
+    display: block;
+    transition: 0.5s;
 }
 
 menu > ul {
@@ -60,7 +78,7 @@ menu > ul > li > a {
     margin: auto;
     text-align: center;
     display: block;
-    padding: 10px;
+    padding: 10px 0px;
     text-decoration: none;
     color: white;
     background-color: var(--orange1);
@@ -73,10 +91,11 @@ menu > ul > li > a:hover {
 }
 
 main {
+    display: block;
     width: 90vw;
-    margin: auto;
+    margin: 0px auto;
     margin-top: 10px;
-    padding: 10px;
+    padding: 10px 0px;
 
 }
 
@@ -87,7 +106,7 @@ article h1, h2, h3 {
 article h2 {
     font-size: 2em;
     width: 400px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--orange2);
 }
 
 #asidet {
@@ -104,16 +123,19 @@ article p {
     font-size: 1.1em;
     text-align: justify;
     margin-bottom: 20px;
-    text-indent: 20px;
     line-height: 1.5em;
 }
 
 img {
-    width: 100vw;
+    display: inline;
+    width: 90vw;
+    text-align: center;
 }
 
 .desc {
+    width: 90vw;
     font-size: 0.8em;
+    margin-bottom: 20px;
     color: var(--cinzatxt);
-    margin-bottom: 10px;
+    background-color: #E48462;
 }

@@ -14,12 +14,13 @@
         <span id="burguer" class="material-symbols-outlined" onclick="clickmenu()">
             menu
         </span>
-        <menu id= "itens">
+        <menu class= "itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Esportes</a></li>
                 <li><a href="#">Política</a></li>
                 <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Culinária</a></li>
             </ul>
         </menu>
     </header>
@@ -27,10 +28,11 @@
         <article>
             <h2>Desvendando os Segredos das Águas Profundas</h2>
             <aside id="asidet">Uma Expedição Subaquática Revela Maravilhas Ocultas</aside>
-
+            <aside class="desc">Postado dia 22/09/2023 ás 20:43 - Atualizada dia 22/09/2023 ás 21:55</aside>
+            <br>
             <img src="img/deepsea.jpg" alt="Fundo do mar">
             <aside class="desc">Imagem ilustrativa, Pexels <br>Brasil</aside>
-            <aside class="desc">Postado dia 22/09/2023 ás 20:43 - Atualizada dia 22/09/2023 ás 21:55</aside>
+            
 
             <p>Nas profundezas do oceano, onde a luz do sol mal penetra, encontra-se um mundo misterioso e pouco explorado. Recentemente, uma equipe de cientistas e mergulhadores embarcou em uma expedição corajosa para desvendar os segredos das águas profundas, e o que encontraram é verdadeiramente extraordinário.</p>
 
@@ -59,14 +61,15 @@
 
     <script>
         function clickmenu() {
-            if (itens.style.display == "none") {
-                itens.style.display = "block"
-            } else {
-                itens.style.display = "none"
-            }
-            
-        }
 
+           if (document.querySelector(".itens").classList == "itens") {
+            document.querySelector("#burguer").textContent = "close"
+           } else {
+            document.querySelector("#burguer").textContent = "menu"
+           }
+
+           document.querySelector(".itens").classList.toggle("show-itens")
+        }
     </script>
 </body>
 </html>
